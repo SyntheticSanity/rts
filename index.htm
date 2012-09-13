@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<title>RTS</title>
+		<link rel="stylesheet" href="style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
+		<script src="http://nfd.ath.cx/socket.io/socket.io.js"></script>
+		<script data-main="js/main" src="js/require.js"></script>
+	</head>
+	<body>
+		<div class="display-group" id="login-ui">
+			<ul class="menu-list" id="login-menu">
+				<li>Username <input id="login-username" type="text" /></li>
+				<li>Password <input id="login-password" type="text" /></li>
+				<li><input id="login-google" class="button" type="button" value="Login using Google Account" /></li>
+			</ul>
+		</div>
+		<div class="display-group" id="menu-ui">
+			<ul class="menu-list" id="main-menu">
+				<li>Skirmish</li>
+				<li>Multiplayer</li>
+				<li>Settings</li>
+			</ul>
+		</div>
+		<div class="display-group" id="game-ui">
+			<canvas id="minimap"></canvas>
+			<ul class="panel icon-list" id="build-list">
+				<li class="build-icon">
+					<img src="img/build/tank.png" />
+				</li>
+				<li class="build-icon">
+					<img src="img/build/tank.png" />
+				</li>
+				<li class="build-icon">
+					<img src="img/build/tank.png" />
+				</li>
+				<li class="build-icon">
+					<img src="img/build/tank.png" />
+				</li>
+				<li class="build-icon">
+					<img src="img/build/tank.png" />
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
